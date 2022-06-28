@@ -43,20 +43,31 @@
 // console.log(combinedStringAges);
 // const combinedNames = combine("Max", "Anna", "as-text");
 // console.log(combinedNames);
-var add = function (n1, n2) {
-    return n1 + n2;
+// const add = (n1: number, n2: number) => {
+//   return n1 + n2;
+// };
+// const printResult = (num: number) => {
+//   console.log("Result: " + num);
+// };
+// const addAndHandle = (n1: number, n2: number, cb: (num: number) => void) => {
+//   const result = n1 + n2;
+//   cb(result);
+// };
+// printResult(add(5, 12));
+// let combineValues: (a: number, b: number) => number;
+// combineValues = add;
+// console.log(combineValues(8, 8));
+// addAndHandle(10, 20, (result) => {
+//   console.log(result);
+// });
+var userInput;
+var userName;
+userInput = 5;
+userInput = "max";
+if (typeof userInput === "string") {
+    userName = userInput;
+}
+var generateError = function (message, code) {
+    throw { message: message, errorCode: code };
 };
-var printResult = function (num) {
-    console.log("Result: " + num);
-};
-var addAndHandle = function (n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-};
-printResult(add(5, 12));
-var combineValues;
-combineValues = add;
-console.log(combineValues(8, 8));
-addAndHandle(10, 20, function (result) {
-    console.log(result);
-});
+generateError("An error occurred!", 500);
