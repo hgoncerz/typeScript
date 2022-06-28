@@ -1,3 +1,4 @@
+"use strict";
 // enum Role {
 //   ADMIN = 5,
 //   READ_ONLY,
@@ -60,14 +61,16 @@
 // addAndHandle(10, 20, (result) => {
 //   console.log(result);
 // });
-var userInput;
-var userName;
-userInput = 5;
-userInput = "max";
-if (typeof userInput === "string") {
-    userName = userInput;
-}
-var generateError = function (message, code) {
-    throw { message: message, errorCode: code };
-};
-generateError("An error occurred!", 500);
+// let userInput: unknown;
+// let userName: string;
+// userInput = 5;
+// userInput = "max";
+// if (typeof userInput === "string") {
+//   userName = userInput;
+// }
+// const generateError = (message: string, code: number) => {
+//   throw { message: message, errorCode: code };
+// };
+// generateError("An error occurred!", 500);
+const userName = "Maximilian";
+console.log(userName);

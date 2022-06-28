@@ -79,17 +79,21 @@
 //   console.log(result);
 // });
 
-let userInput: unknown;
-let userName: string;
+// let userInput: unknown;
+// let userName: string;
 
-userInput = 5;
-userInput = "max";
-if (typeof userInput === "string") {
-  userName = userInput;
-}
+// userInput = 5;
+// userInput = "max";
+// if (typeof userInput === "string") {
+//   userName = userInput;
+// }
 
-const generateError = (message: string, code: number) => {
-  throw { message: message, errorCode: code };
-};
+// const generateError = (message: string, code: number) => {
+//   throw { message: message, errorCode: code };
+// };
 
-generateError("An error occurred!", 500);
+// generateError("An error occurred!", 500);
+
+const userName = "Maximilian";
+
+console.log(userName);
